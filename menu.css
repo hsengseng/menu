@@ -1,0 +1,75 @@
+.menu{
+	transition: all .3s;
+	position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;}
+.menu ul{padding:0;}
+.menu li{list-style:none;} 
+.menu a{text-decoration:none;}
+.menu a{
+	display: block;
+	overflow: hidden;
+	padding-left: 20px; 
+	line-height: 46px;
+	max-height: 46px;
+	color: #080808;
+	transition: all .3s;}
+.menu ul>li{padding-left: 15px;}
+.menu a span{margin-left: 15px;}
+.menu-item{position: relative;}
+.menu-item.menu-show{border-bottom: none;}
+.menu-item.menu-show ul{display: block;}
+.menu-item ul{display: none;}
+.menu-item>a:before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	width: 2px;
+	height: 46px;
+	background: #34A0CE;
+	opacity:0;
+	transition: all .3s;}
+
+.menu-more{
+	float:right;
+	margin-right: 20px;
+	font-size: 12px;
+	top: 15px;
+	transition: transform .3s;}
+
+.menu-show .menu-more{transform:rotate(90deg);}
+.menu-show,
+.menu-item a:hover{
+	color: #FFF;
+	background-color: rgba(0,0,0,.8);}
+.menu-show>a:before,
+.menu-item>a:hover:before{
+	opacity:1;}
+.menu-item .active{background: rgba(0,0,0,.2);}
+.menu-content{
+	height:100%;
+}
+.menu li span.button {
+	line-height:0; 
+	float:right;
+	margin-right: 20px;
+	font-size: 12px;
+	margin-top: 13px;
+	transition: transform .3s; width:16px; height:16px; display: inline-block; vertical-align:middle;
+	border:0 none; cursor: pointer;outline:none;
+	background-color:transparent; background-repeat:no-repeat; background-attachment: scroll;
+	background-image:url("../images/left_menuForOutLook.png"); *background-image:url("../images/left_menuForOutLook.gif")}
+
+.menu li span.button.noline_open {background-position: 0 0;}
+.menu li span.button.noline_close {background-position: -18px 0;}
+.menu li span.button.noline_open.level0 {background-position: 0 -18px;}
+.menu li span.button.noline_close.level0 {background-position: -18px -18px;} 
