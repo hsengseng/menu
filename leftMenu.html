@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./src/images/favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./src/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="./src/css/zTreeStyle.css" rel="stylesheet">
+    <link href="./src/css/menu.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="./src/js/html5shiv.min.js"></script>
+      <script src="./src/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand active" href="#">Project name</a>
+        </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid menu-content">
+      <div class="row menu-content">
+        <div id="treeDemo" class="col-sm-3 col-md-2 menu">
+         <!--  <ul>
+           <li class="menu-item">
+               <a><i class="glyphicon glyphicon-user"></i><span>用户管理</span><i class="glyphicon glyphicon-chevron-right menu-more"></i></a>
+               <ul>
+                   <li><a><span>网站设置</span></a></li>
+                   <li><a><span>友情链接</span></a></li>
+                   <li><a><span>分类管理</span></a></li>
+                   <li><a><span>系统日志</span></a></li>
+               </ul>
+           </li>
+           <li class="menu-item">
+               <a><i class="glyphicon glyphicon-align-right"></i><span>文章管理</span><i class="glyphicon glyphicon-chevron-right menu-more"></i></a>
+               <ul style="display:block;">
+                   <li >
+                     <a><span>用户管理</span>
+                     <i class="glyphicon glyphicon-chevron-right menu-more"></i></a>
+                     <ul style="display: block;">
+                         <li><a class="active"><span>网站设置</span></a></li>
+                         <li><a><span>友情链接</span></a></li>
+                         <li><a><span>分类管理</span></a></li>
+                         <li><a><span>系统日志</span></a></li>
+                     </ul>
+                   </li>
+                   <li><a><span>站内公告</span></a></li>
+                   <li><a><span>登录日志</span></a></li>
+               </ul>
+           </li>
+           <li class="menu-item">
+               <a><i class="glyphicon glyphicon-leaf"></i><span>订单管理</span><i class="glyphicon glyphicon-chevron-right menu-more"></i></a>
+               <ul style="display:block;">
+                   <li><a><span>订单列表</span></a></li>
+                   <li><a><span>打个酱油</span></a></li>
+                   <li><a><span>也打酱油</span></a></li>
+               </ul>
+           </li>
+                 </ul> -->
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+         <h1 class="page-header">Dashboard</h1>
+       
+         <div class="row placeholders">
+           <div class="col-xs-6 col-sm-3 placeholder">
+             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+             <h4>Label</h4>
+             <span class="text-muted">Something else</span>
+           </div>
+           <div class="col-xs-6 col-sm-3 placeholder">
+             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+             <h4>Label</h4>
+             <span class="text-muted">Something else</span>
+           </div>
+           <div class="col-xs-6 col-sm-3 placeholder">
+             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+             <h4>Label</h4>
+             <span class="text-muted">Something else</span>
+           </div>
+           <div class="col-xs-6 col-sm-3 placeholder">
+             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+             <h4>Label</h4>
+             <span class="text-muted">Something else</span>
+           </div>
+         </div>
+       
+         <h2 class="sub-header">Section title</h2>
+         <div class="table-responsive">
+           <table class="table table-striped">
+             <thead>
+               <tr>
+                 <th>#</th>
+                 <th>Header</th>
+                 <th>Header</th>
+                 <th>Header</th>
+                 <th>Header</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>1,001</td>
+                 <td>Lorem</td>
+                 <td>ipsum</td>
+                 <td>dolor</td>
+                 <td>sit</td>
+               </tr>
+               <tr>
+                 <td>1,002</td>
+                 <td>amet</td>
+                 <td>consectetur</td>
+                 <td>adipiscing</td>
+                 <td>elit</td>
+               </tr>
+               <tr>
+                 <td>1,003</td>
+                 <td>Integer</td>
+                 <td>nec</td>
+                 <td>odio</td>
+                 <td>Praesent</td>
+               </tr>
+               <tr>
+                 <td>1,003</td>
+                 <td>libero</td>
+                 <td>Sed</td>
+                 <td>cursus</td>
+                 <td>ante</td>
+               </tr>
+               <tr>
+                 <td>1,004</td>
+                 <td>dapibus</td>
+                 <td>diam</td>
+                 <td>Sed</td>
+                 <td>nisi</td>
+               </tr>
+               <tr>
+                 <td>1,005</td>
+                 <td>Nulla</td>
+                 <td>quis</td>
+                 <td>sem</td>
+                 <td>at</td>
+               </tr>
+               <tr>
+                 <td>1,006</td>
+                 <td>nibh</td>
+                 <td>elementum</td>
+                 <td>imperdiet</td>
+                 <td>Duis</td>
+               </tr>
+               <tr>
+                 <td>1,007</td>
+                 <td>sagittis</td>
+                 <td>ipsum</td>
+                 <td>Praesent</td>
+                 <td>mauris</td>
+               </tr>
+               <tr>
+                 <td>1,008</td>
+                 <td>Fusce</td>
+                 <td>nec</td>
+                 <td>tellus</td>
+                 <td>sed</td>
+               </tr>
+               <tr>
+                 <td>1,009</td>
+                 <td>augue</td>
+                 <td>semper</td>
+                 <td>porta</td>
+                 <td>Mauris</td>
+               </tr>
+               <tr>
+                 <td>1,010</td>
+                 <td>massa</td>
+                 <td>Vestibulum</td>
+                 <td>lacinia</td>
+                 <td>arcu</td>
+               </tr>
+               <tr>
+                 <td>1,011</td>
+                 <td>eget</td>
+                 <td>nulla</td>
+                 <td>Class</td>
+                 <td>aptent</td>
+               </tr>
+               <tr>
+                 <td>1,012</td>
+                 <td>taciti</td>
+                 <td>sociosqu</td>
+                 <td>ad</td>
+                 <td>litora</td>
+               </tr>
+               <tr>
+                 <td>1,013</td>
+                 <td>torquent</td>
+                 <td>per</td>
+                 <td>conubia</td>
+                 <td>nostra</td>
+               </tr>
+               <tr>
+                 <td>1,014</td>
+                 <td>per</td>
+                 <td>inceptos</td>
+                 <td>himenaeos</td>
+                 <td>Curabitur</td>
+               </tr>
+               <tr>
+                 <td>1,015</td>
+                 <td>sodales</td>
+                 <td>ligula</td>
+                 <td>in</td>
+                 <td>libero</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+       </div> 
+      </div>
+    </div>
+
+
+    <script src="./src/js/jquery.min.js"></script>
+    <script src="./src/js/bootstrap.min.js"></script>
+    <script src="./src/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./src/js/jquery.ztree.core.js"></script>
+    <script>
+    var curMenu = null, zTree_Menu = null;
+    var setting = {
+      view: {
+        showLine: false,
+        showIcon: false,
+        selectedMulti: false,
+        dblClickExpand: false,
+        addDiyDom: addDiyDom
+      },
+      data: {
+        simpleData: {
+          enable: true
+        }
+      },
+      callback: {
+        beforeClick: beforeClick
+      }
+    };
+
+    var zNodes =[
+      { id:1, pId:0, name:"文件夹", open:true,uri:""},
+      { id:11, pId:1, name:"收件箱",uri:""},
+      { id:111, pId:11, name:"收件箱1",uri:""},
+      { id:112, pId:111, name:"收件箱2",uri:""},
+      { id:113, pId:112, name:"收件箱3",uri:""},
+      { id:114, pId:113, name:"收件箱4",uri:"a"},
+      { id:12, pId:1, name:"垃圾邮件",uri:"H"},
+      { id:13, pId:1, name:"草稿",uri:"J"},
+      { id:14, pId:1, name:"已发送邮件",uri:"H"},
+      { id:15, pId:1, name:"已删除邮件",uri:"H"},
+      { id:3, pId:0, name:"快速视图",uri:""},
+      { id:31, pId:3, name:"文档",uri:"a"},
+      { id:32, pId:3, name:"照片",uri:"a"}
+    ];
+
+    function addDiyDom(treeId, treeNode) {
+      var switchObj = $("#" + treeNode.tId + "_switch"),
+      icoObj = $("#" + treeNode.tId + "_ico");
+      switchObj.remove();
+      icoObj.remove();
+
+      var aObj = $("#" + treeNode.tId + "_a");
+      if (treeNode.level == 0) {
+        var iconHtml = '<i class="glyphicon glyphicon-user"></i>';
+        aObj.find("span").before(iconHtml);
+      }
+      if(treeNode.uri == ''){
+        var menuMoreHtml = '<span id='+treeNode.tId+'_switch" class="glyphicon glyphicon-chevron-right menu-more button level'+treeNode.level+' switch" treenode_switch></span>';
+        aObj.append(switchObj);
+      }
+    }
+
+    function beforeClick(treeId, treeNode) {
+      if (treeNode.level == 0 ) {
+        var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+        zTree.expandNode(treeNode);
+        return false;
+      }
+      return true;
+    }
+
+    $(document).ready(function(){
+      var treeObj = $("#treeDemo");
+      $.fn.zTree.init(treeObj, setting, zNodes);
+      zTree_Menu = $.fn.zTree.getZTreeObj("treeDemo");
+      curMenu = zTree_Menu.getNodes()[0].children[0].children[0];
+      zTree_Menu.selectNode(curMenu);
+      treeObj.addClass("showIcon");
+      /*treeObj.hover(function () {
+        if (!treeObj.hasClass("showIcon")) {
+          treeObj.addClass("showIcon");
+        }
+      }, function() {
+        treeObj.removeClass("showIcon");
+      });*/
+    });
+    </script>
+  </body>
+</html>
